@@ -27,10 +27,11 @@ void swap(listint_t *B, listint_t *C)
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *curr = *list;
+	listint_t *curr;
 
 	if (list == NULL)
 		return;
+	curr = *list;
 	while (curr)
 	{
 		if (curr->prev == NULL)
